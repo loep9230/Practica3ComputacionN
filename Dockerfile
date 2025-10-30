@@ -1,40 +1,30 @@
-# ====================================
-# Stage 1: BUILD
-# ====================================
-FROM mcr.microsoft.com/dotnet/sdk:8.0-alpine AS build
+# Consulte https://aka.ms/customizecontainer para aprender a personalizar su contenedor de depuración y cómo Visual Studio usa este Dockerfile para compilar sus imágenes para una depuración más rápida.
 
+# Esta fase se usa cuando se ejecuta desde VS en modo rápido (valor predeterminado para la configuración de depuración)
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+USER $APP_UID
+WORKDIR /app
+EXPOSE 8080
+EXPOSE 8081
+
+
+# Esta fase se usa para compilar el proyecto de servicio
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-
-# Copiar archivos de proyecto y restaurar dependencias
-# Esto se hace primero para aprovechar el caché de Docker
 COPY ["./config-api/config-api.csproj", "."]
 RUN dotnet restore "./config-api/config-api.csproj"
+COPY . .
+WORKDIR "/src/."
+RUN dotnet build "./config-api/config-api.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
-# Copiar el resto del código fuente
-COPY . ./
+# Esta fase se usa para publicar el proyecto de servicio que se copiará en la fase final.
+FROM build AS publish
+ARG BUILD_CONFIGURATION=Release
+RUN dotnet publish "./config-api/config-api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
-# Compilar y publicar la aplicación en modo Release
-RUN dotnet publish "./config-api/config-api.csproj" -c Release -o /app/publish --no-restore
-
-# ====================================
-# Stage 2: RUNTIME
-# ====================================
-FROM mcr.microsoft.com/dotnet/aspnet:8.0-alpine AS runtime
-
-# Instalar PostgreSQL client para healthcheck y migraciones
-RUN apk add --no-cache postgresql-client
-
+# Esta fase se usa en producción o cuando se ejecuta desde VS en modo normal (valor predeterminado cuando no se usa la configuración de depuración)
+FROM base AS final
 WORKDIR /app
-
-# Copiar los archivos publicados desde el stage de build
-COPY --from=build /app/publish .
-
-# Copiar el script de entrypoint
-COPY entrypoint_script.sh /app/entrypoint_script.sh
-RUN chmod +x /app/entrypoint_script.sh
-
-# Exponer puertos HTTP y HTTPS
-EXPOSE 5129 7258
-
-# Configurar punto de entrada
-ENTRYPOINT ["/app/entrypoint_script.sh"]
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "./config-api/config-api.dll"]
