@@ -7,7 +7,7 @@ WORKDIR /src
 
 # Copiar archivos de proyecto y restaurar dependencias
 # Esto se hace primero para aprovechar el caché de Docker
-COPY *.csproj ./
+COPY ["config-api.csproj", "."]
 RUN dotnet restore "./config-api/config-api.csproj"
 
 # Copiar el resto del código fuente
