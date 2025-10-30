@@ -1,0 +1,62 @@
+C:\Users\leand\Documents\Algoritmos\C#\Practica3CN\config-infraestructura\obj\Debug\net8.0\config-infraestructura.csproj.AssemblyReference.cache
+C:\Users\leand\Documents\Algoritmos\C#\Practica3CN\config-infraestructura\obj\Debug\net8.0\config-infraestructura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leand\Documents\Algoritmos\C#\Practica3CN\config-infraestructura\obj\Debug\net8.0\config-infraestructura.AssemblyInfoInputs.cache
+C:\Users\leand\Documents\Algoritmos\C#\Practica3CN\config-infraestructura\obj\Debug\net8.0\config-infraestructura.AssemblyInfo.cs
+C:\Users\leand\Documents\Algoritmos\C#\Practica3CN\config-infraestructura\obj\Debug\net8.0\config-infraestructura.csproj.CoreCompileInputs.cache
+C:\Users\leand\Documents\Algoritmos\C#\Practica3CN\config-infraestructura\bin\Debug\net8.0\config-infraestructura.deps.json
+C:\Users\leand\Documents\Algoritmos\C#\Practica3CN\config-infraestructura\bin\Debug\net8.0\config-infraestructura.dll
+C:\Users\leand\Documents\Algoritmos\C#\Practica3CN\config-infraestructura\bin\Debug\net8.0\config-infraestructura.pdb
+C:\Users\leand\Documents\Algoritmos\C#\Practica3CN\config-infraestructura\bin\Debug\net8.0\config-domain.dll
+C:\Users\leand\Documents\Algoritmos\C#\Practica3CN\config-infraestructura\bin\Debug\net8.0\config-domain.pdb
+C:\Users\leand\Documents\Algoritmos\C#\Practica3CN\config-infraestructura\obj\Debug\net8.0\config-i.BD6D6DB8.Up2Date
+C:\Users\leand\Documents\Algoritmos\C#\Practica3CN\config-infraestructura\obj\Debug\net8.0\config-infraestructura.dll
+C:\Users\leand\Documents\Algoritmos\C#\Practica3CN\config-infraestructura\obj\Debug\net8.0\refint\config-infraestructura.dll
+C:\Users\leand\Documents\Algoritmos\C#\Practica3CN\config-infraestructura\obj\Debug\net8.0\config-infraestructura.pdb
+C:\Users\leand\Documents\Algoritmos\C#\Practica3CN\config-infraestructura\obj\Debug\net8.0\ref\config-infraestructura.dll
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Practica3CN\config-infraestructura\bin\Debug\net8.0\config-infraestructura.deps.json
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Practica3CN\config-infraestructura\bin\Debug\net8.0\config-infraestructura.dll
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Practica3CN\config-infraestructura\bin\Debug\net8.0\config-infraestructura.pdb
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Practica3CN\config-infraestructura\bin\Debug\net8.0\config-domain.dll
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Practica3CN\config-infraestructura\bin\Debug\net8.0\config-domain.pdb
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Practica3CN\config-infraestructura\obj\Debug\net8.0\config-infraestructura.csproj.AssemblyReference.cache
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Practica3CN\config-infraestructura\obj\Debug\net8.0\config-infraestructura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Practica3CN\config-infraestructura\obj\Debug\net8.0\config-infraestructura.AssemblyInfoInputs.cache
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Practica3CN\config-infraestructura\obj\Debug\net8.0\config-infraestructura.AssemblyInfo.cs
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Practica3CN\config-infraestructura\obj\Debug\net8.0\config-infraestructura.csproj.CoreCompileInputs.cache
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Practica3CN\config-infraestructura\obj\Debug\net8.0\config-infraestructura.sourcelink.json
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Practica3CN\config-infraestructura\obj\Debug\net8.0\config-i.BD6D6DB8.Up2Date
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Practica3CN\config-infraestructura\obj\Debug\net8.0\config-infraestructura.dll
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Practica3CN\config-infraestructura\obj\Debug\net8.0\refint\config-infraestructura.dll
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Practica3CN\config-infraestructura\obj\Debug\net8.0\config-infraestructura.pdb
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Practica3CN\config-infraestructura\obj\Debug\net8.0\ref\config-infraestructura.dll
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Entrega_practica\Practica3CN\config-infraestructura\bin\Debug\net8.0\config-infraestructura.deps.json
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Entrega_practica\Practica3CN\config-infraestructura\bin\Debug\net8.0\config-infraestructura.dll
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Entrega_practica\Practica3CN\config-infraestructura\bin\Debug\net8.0\config-infraestructura.pdb
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Entrega_practica\Practica3CN\config-infraestructura\bin\Debug\net8.0\config-domain.dll
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Entrega_practica\Practica3CN\config-infraestructura\bin\Debug\net8.0\config-domain.pdb
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Entrega_practica\Practica3CN\config-infraestructura\obj\Debug\net8.0\config-infraestructura.csproj.AssemblyReference.cache
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Entrega_practica\Practica3CN\config-infraestructura\obj\Debug\net8.0\config-infraestructura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Entrega_practica\Practica3CN\config-infraestructura\obj\Debug\net8.0\config-infraestructura.AssemblyInfoInputs.cache
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Entrega_practica\Practica3CN\config-infraestructura\obj\Debug\net8.0\config-infraestructura.AssemblyInfo.cs
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Entrega_practica\Practica3CN\config-infraestructura\obj\Debug\net8.0\config-infraestructura.csproj.CoreCompileInputs.cache
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Entrega_practica\Practica3CN\config-infraestructura\obj\Debug\net8.0\config-infraestructura.sourcelink.json
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Entrega_practica\Practica3CN\config-infraestructura\obj\Debug\net8.0\config-i.BD6D6DB8.Up2Date
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Entrega_practica\Practica3CN\config-infraestructura\obj\Debug\net8.0\config-infraestructura.dll
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Entrega_practica\Practica3CN\config-infraestructura\obj\Debug\net8.0\refint\config-infraestructura.dll
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Entrega_practica\Practica3CN\config-infraestructura\obj\Debug\net8.0\config-infraestructura.pdb
+C:\Juan\Universidad\Semestre 18vo\Computacion en la nube\Practicas\Practica 3\Entrega_practica\Practica3CN\config-infraestructura\obj\Debug\net8.0\ref\config-infraestructura.dll
+C:\Users\leand\Documents\Algoritmos\C#\Practica\config-infraestructura\bin\Debug\net8.0\config-infraestructura.deps.json
+C:\Users\leand\Documents\Algoritmos\C#\Practica\config-infraestructura\bin\Debug\net8.0\config-infraestructura.dll
+C:\Users\leand\Documents\Algoritmos\C#\Practica\config-infraestructura\bin\Debug\net8.0\config-infraestructura.pdb
+C:\Users\leand\Documents\Algoritmos\C#\Practica\config-infraestructura\bin\Debug\net8.0\config-domain.dll
+C:\Users\leand\Documents\Algoritmos\C#\Practica\config-infraestructura\bin\Debug\net8.0\config-domain.pdb
+C:\Users\leand\Documents\Algoritmos\C#\Practica\config-infraestructura\obj\Debug\net8.0\config-infraestructura.csproj.AssemblyReference.cache
+C:\Users\leand\Documents\Algoritmos\C#\Practica\config-infraestructura\obj\Debug\net8.0\config-infraestructura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leand\Documents\Algoritmos\C#\Practica\config-infraestructura\obj\Debug\net8.0\config-infraestructura.AssemblyInfoInputs.cache
+C:\Users\leand\Documents\Algoritmos\C#\Practica\config-infraestructura\obj\Debug\net8.0\config-infraestructura.AssemblyInfo.cs
+C:\Users\leand\Documents\Algoritmos\C#\Practica\config-infraestructura\obj\Debug\net8.0\config-infraestructura.csproj.CoreCompileInputs.cache
+C:\Users\leand\Documents\Algoritmos\C#\Practica\config-infraestructura\obj\Debug\net8.0\config-i.BD6D6DB8.Up2Date
+C:\Users\leand\Documents\Algoritmos\C#\Practica\config-infraestructura\obj\Debug\net8.0\config-infraestructura.dll
+C:\Users\leand\Documents\Algoritmos\C#\Practica\config-infraestructura\obj\Debug\net8.0\refint\config-infraestructura.dll
+C:\Users\leand\Documents\Algoritmos\C#\Practica\config-infraestructura\obj\Debug\net8.0\config-infraestructura.pdb
+C:\Users\leand\Documents\Algoritmos\C#\Practica\config-infraestructura\obj\Debug\net8.0\ref\config-infraestructura.dll

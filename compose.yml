@@ -1,0 +1,92 @@
+version: '3.8'
+
+services:
+  # =========================================
+  # Servicio: Base de datos PostgreSQL
+  # =========================================
+  postgres-db:
+    image: postgres:16-alpine
+    container_name: config-api-postgres
+    restart: always
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-Practica3CN}
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-1234}
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - configapi_net
+    ports:
+      - "5432:5432"  # Exponer para debugging (opcional)
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  # =========================================
+  # Servicio: Aplicación config-api
+  # =========================================
+  config-api:
+    image: config-api:latest
+    container_name: config-api-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "${HTTP_PORT:-8080}:5129"    # HTTP
+      - "${HTTPS_PORT:-8081}:7258"   # HTTPS
+    environment:
+      # Configuración de ASP.NET Core
+      ASPNETCORE_ENVIRONMENT: ${ASPNETCORE_ENVIRONMENT:-Development}
+      ASPNETCORE_URLS: "https://+:7258;http://+:5129"
+      ASPNETCORE_HTTPS_PORT: "7258"
+      ASPNETCORE_Kestrel__Certificates__Default__Password: ${CERT_PASSWORD:-}
+      ASPNETCORE_Kestrel__Certificates__Default__Path: ${CERT_PATH:-}
+      
+      # Variables de PostgreSQL para el entrypoint
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-1234}
+      POSTGRES_DB: ${POSTGRES_DB:-Practica3CN}
+      
+      # Cadena de conexión (se sobrescribe en appsettings)
+      ConnectionStrings__PostgresConnection: "Host=postgres-db;Port=5432;Database=${POSTGRES_DB:-Practica3CN};Username=${POSTGRES_USER:-postgres};Password=${POSTGRES_PASSWORD:-1234}"
+      
+      # Zona horaria
+      TZ: "America/Caracas"
+      
+      # Control de migraciones
+      SKIP_MIGRATIONS: ${SKIP_MIGRATIONS:-false}
+    networks:
+      - configapi_net
+    depends_on:
+      postgres-db:
+        condition: service_healthy
+    volumes:
+      # Opcional: Para desarrollo, montar certificados SSL
+      - ${CERT_VOLUME:-./certs}:/https:ro
+    healthcheck:
+      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider http://localhost:5129/status || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+# =========================================
+# Volúmenes
+# =========================================
+volumes:
+  postgres_data:
+    driver: local
+    name: config-api-postgres-data
+
+# =========================================
+# Redes
+# =========================================
+networks:
+  configapi_net:
+    driver: bridge
+    name: config-api-network

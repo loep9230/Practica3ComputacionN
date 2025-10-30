@@ -1,0 +1,310 @@
+[
+  {
+    "ContainingType": "config_api.Controllers.ConfigApi",
+    "Method": "ObtenerEntornos",
+    "RelativePath": "enviroments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "config_api.Controllers.ConfigApi",
+    "Method": "CrearEntorno",
+    "RelativePath": "enviroments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entornoDto",
+        "Type": "config_api.Dtos.EntornoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "config_api.Dtos.EntornoDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "config_api.Controllers.ConfigApi",
+    "Method": "ObtenerEntorno",
+    "RelativePath": "enviroments/{env_name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "env_name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "config_domain.Entornos",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "config_api.Controllers.ConfigApi",
+    "Method": "ActualizarEntorno",
+    "RelativePath": "enviroments/{env_name}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "env_name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "entornoDto",
+        "Type": "config_api.Dtos.ActualizarEntornoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "config_api.Controllers.ConfigApi",
+    "Method": "ActualizarParcialmenteEntorno",
+    "RelativePath": "enviroments/{env_name}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "env_name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "entorno",
+        "Type": "config_api.Dtos.ParcialEntornoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "config_api.Controllers.ConfigApi",
+    "Method": "BorrarEntorno",
+    "RelativePath": "enviroments/{env_name}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "env_name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "config_api.Controllers.ConfigApi",
+    "Method": "ConsultarEntornoJson",
+    "RelativePath": "enviroments/{env_name}.json",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "env_name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "config_api.Controllers.ConfigApi",
+    "Method": "ObtenerVariablesEntorno",
+    "RelativePath": "enviroments/{env_name}/variables",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "env_name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "config_api.Controllers.ConfigApi",
+    "Method": "CrearVariableEntorno",
+    "RelativePath": "enviroments/{env_name}/variables",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "env_name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "variableDto",
+        "Type": "config_api.Dtos.VariableDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "config_api.Controllers.ConfigApi",
+    "Method": "ObtenerVariableEntorno",
+    "RelativePath": "enviroments/{env_name}/variables/{var_name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "env_name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "var_name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "config_domain.Variables",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "config_api.Controllers.ConfigApi",
+    "Method": "ActualizarVariableEntorno",
+    "RelativePath": "enviroments/{env_name}/variables/{var_name}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "env_name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "var_name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "variableDto",
+        "Type": "config_api.Dtos.ActualizarVariableDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "config_api.Controllers.ConfigApi",
+    "Method": "ActualizarParcialmenteVariable",
+    "RelativePath": "enviroments/{env_name}/variables/{var_name}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "env_name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "var_name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "parcialVariableDto",
+        "Type": "config_api.Dtos.ParcialVariableDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "config_api.Controllers.ConfigApi",
+    "Method": "BorrarVariableEntorno",
+    "RelativePath": "enviroments/{env_name}/variables/{var_name}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "env_name",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "var_name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "config_api.Controllers.ConfigApi",
+    "Method": "Status",
+    "RelativePath": "status",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

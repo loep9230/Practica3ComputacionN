@@ -1,0 +1,40 @@
+# ====================================
+# Stage 1: BUILD
+# ====================================
+FROM mcr.microsoft.com/dotnet/sdk:8.0-alpine AS build
+
+WORKDIR /src
+
+# Copiar archivos de proyecto y restaurar dependencias
+# Esto se hace primero para aprovechar el caché de Docker
+COPY *.csproj ./
+RUN dotnet restore
+
+# Copiar el resto del código fuente
+COPY . ./
+
+# Compilar y publicar la aplicación en modo Release
+RUN dotnet publish -c Release -o /app/publish --no-restore
+
+# ====================================
+# Stage 2: RUNTIME
+# ====================================
+FROM mcr.microsoft.com/dotnet/aspnet:8.0-alpine AS runtime
+
+# Instalar PostgreSQL client para healthcheck y migraciones
+RUN apk add --no-cache postgresql-client
+
+WORKDIR /app
+
+# Copiar los archivos publicados desde el stage de build
+COPY --from=build /app/publish .
+
+# Copiar el script de entrypoint
+COPY entrypoint.sh /app/entrypoint.sh
+RUN chmod +x /app/entrypoint.sh
+
+# Exponer puertos HTTP y HTTPS
+EXPOSE 5129 7258
+
+# Configurar punto de entrada
+ENTRYPOINT ["/app/entrypoint.sh"]
