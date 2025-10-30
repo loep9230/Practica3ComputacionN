@@ -14,7 +14,7 @@ RUN dotnet restore "./config-api/config-api.csproj"
 COPY . ./
 
 # Compilar y publicar la aplicación en modo Release
-RUN dotnet publish -c Release -o /app/publish --no-restore
+RUN dotnet publish "./config-api/config-api.csproj" -c Release -o /app/publish --no-restore
 
 # ====================================
 # Stage 2: RUNTIME
