@@ -30,11 +30,11 @@ WORKDIR /app
 COPY --from=build /app/publish .
 
 # Copiar el script de entrypoint
-COPY entrypoint.sh /app/entrypoint.sh
-RUN chmod +x /app/entrypoint.sh
+COPY entrypoint_script.sh /app/entrypoint_script.sh
+RUN chmod +x /app/entrypoint_script.sh
 
 # Exponer puertos HTTP y HTTPS
 EXPOSE 5129 7258
 
 # Configurar punto de entrada
-ENTRYPOINT ["/app/entrypoint.sh"]
+ENTRYPOINT ["/app/entrypoint_script.sh"]
