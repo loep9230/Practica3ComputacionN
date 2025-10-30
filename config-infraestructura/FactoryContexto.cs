@@ -10,7 +10,7 @@ namespace config_infraestructura
         public Contexto CreateDbContext(String[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<Contexto>();
-            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=Practica3CN;Username=postgres;Password=admin1234*");
+            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=Practica3CN;Username=postgres;Password=1234");
             return new Contexto(optionsBuilder.Options);
         }
 
