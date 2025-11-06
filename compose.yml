@@ -44,8 +44,8 @@ services:
       ASPNETCORE_ENVIRONMENT: ${ASPNETCORE_ENVIRONMENT:-Development}
       ASPNETCORE_URLS: "http://+:5129"
       ASPNETCORE_HTTPS_PORT: "5129"
-      ASPNETCORE_Kestrel__Certificates__Default__Password: ${CERT_PASSWORD:-}
-      ASPNETCORE_Kestrel__Certificates__Default__Path: ${CERT_PATH:-}
+      #ASPNETCORE_Kestrel__Certificates__Default__Password: ${CERT_PASSWORD:-}
+      #ASPNETCORE_Kestrel__Certificates__Default__Path: ${CERT_PATH:-}
       
       # Variables de PostgreSQL para el entrypoint
       POSTGRES_USER: ${POSTGRES_USER:-postgres}
