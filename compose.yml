@@ -38,12 +38,12 @@ services:
     restart: always
     ports:
       - "${HTTP_PORT:-8080}:5129"    # HTTP
-      - "${HTTPS_PORT:-8081}:7258"   # HTTPS
+      #- "${HTTPS_PORT:-8081}:7258"   # HTTPS
     environment:
       # Configuración de ASP.NET Core
       ASPNETCORE_ENVIRONMENT: ${ASPNETCORE_ENVIRONMENT:-Development}
-      ASPNETCORE_URLS: "https://+:7258;http://+:5129"
-      ASPNETCORE_HTTPS_PORT: "7258"
+      ASPNETCORE_URLS: "http://+:5129"
+      ASPNETCORE_HTTPS_PORT: "5129"
       ASPNETCORE_Kestrel__Certificates__Default__Password: ${CERT_PASSWORD:-}
       ASPNETCORE_Kestrel__Certificates__Default__Path: ${CERT_PATH:-}
       
