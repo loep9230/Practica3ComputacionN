@@ -60,3 +60,4 @@ C:\Users\leand\Documents\Algoritmos\C#\Practica\config-infraestructura\obj\Debug
 C:\Users\leand\Documents\Algoritmos\C#\Practica\config-infraestructura\obj\Debug\net8.0\refint\config-infraestructura.dll
 C:\Users\leand\Documents\Algoritmos\C#\Practica\config-infraestructura\obj\Debug\net8.0\config-infraestructura.pdb
 C:\Users\leand\Documents\Algoritmos\C#\Practica\config-infraestructura\obj\Debug\net8.0\ref\config-infraestructura.dll
+C:\Users\leand\Documents\Algoritmos\C#\Practica\config-infraestructura\obj\Debug\net8.0\config-infraestructura.sourcelink.json

@@ -500,3 +500,4 @@ C:\Users\leand\Documents\Algoritmos\C#\Practica\config-api\obj\Debug\net8.0\refi
 C:\Users\leand\Documents\Algoritmos\C#\Practica\config-api\obj\Debug\net8.0\config-api.pdb
 C:\Users\leand\Documents\Algoritmos\C#\Practica\config-api\obj\Debug\net8.0\config-api.genruntimeconfig.cache
 C:\Users\leand\Documents\Algoritmos\C#\Practica\config-api\obj\Debug\net8.0\ref\config-api.dll
+C:\Users\leand\Documents\Algoritmos\C#\Practica\config-api\obj\Debug\net8.0\config-api.sourcelink.json

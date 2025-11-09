@@ -243,7 +243,7 @@ namespace config_api.Controllers
                 return NotFound(new { message = $"Entorno o variable no encontrada o no especificada correctamente" });
             }
             _mapper.Map(parcialVariableDto, resultado);
-            resultado.updated_at = DateTime.UtcNow; // Actualizar timestamp
+            resultado.updated_at = DateTime.UtcNow;
             await _repositorio.ActualizarVariableEntorno(resultado);
             return NoContent();
         }
