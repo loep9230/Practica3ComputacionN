@@ -5,6 +5,9 @@
     {
       "AbsoluteMoniker": "D:0:0:{E7652CD6-5E38-4813-BD3C-75139921DDE2}|config-api.csproj|c:\\users\\leand\\documents\\algoritmos\\c#\\practica\\config-api\\controllers\\configapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7652CD6-5E38-4813-BD3C-75139921DDE2}|config-api.csproj|solutionrelative:controllers\\configapi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{11C4AD3B-7FDF-49E0-AD6F-E28E3055513A}|..\\config-infraestructura\\config-infraestructura.csproj|c:\\users\\leand\\documents\\algoritmos\\c#\\practica\\config-infraestructura\\repositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +17,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Repositorio.cs",
+              "DocumentMoniker": "C:\\Users\\leand\\Documents\\Algoritmos\\C#\\Practica\\config-infraestructura\\Repositorio.cs",
+              "RelativeDocumentMoniker": "..\\config-infraestructura\\Repositorio.cs",
+              "ToolTip": "C:\\Users\\leand\\Documents\\Algoritmos\\C#\\Practica\\config-infraestructura\\Repositorio.cs",
+              "RelativeToolTip": "..\\config-infraestructura\\Repositorio.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwCQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T17:16:33.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,14 +44,10 @@
               "RelativeDocumentMoniker": "Controllers\\ConfigApi.cs",
               "ToolTip": "C:\\Users\\leand\\Documents\\Algoritmos\\C#\\Practica\\config-api\\Controllers\\ConfigApi.cs",
               "RelativeToolTip": "Controllers\\ConfigApi.cs",
-              "ViewState": "AgIAAPIAAAAAAAAAAAAmwAQBAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAQBAAAAAAAAAAAqwBQBAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-09T15:14:50.607Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

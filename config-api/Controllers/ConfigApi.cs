@@ -5,6 +5,7 @@ using config_infraestructura;
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.FileProviders;
+using System.Linq;
 
 namespace config_api.Controllers
 {
@@ -261,9 +262,23 @@ namespace config_api.Controllers
         }
 
         [HttpGet("/enviroments/{env_name}.json")]
-        public IActionResult ConsultarEntornoJson(string env_name)
+        public async Task<IActionResult> ConsultarEntornoJson(string env_name)
         {
-            return Ok("pong");
-        }
+            var entorno = await _repositorio.ObtenerEntornoPorNombre(env_name);
+            if (entorno == null)
+            {
+                return NotFound(new { message = $"Entorno '{env_name}' no encontrado" });
+            }
+
+            var variables = _repositorio.ConsultarVariablesEntorno(env_name);
+            if (variables.Count() == 0)
+            {
+                return NoContent();
+            }
+
+            var dictionario = variables.ToDictionary(v => v.name,v => v.value);
+
+            return Ok(dictionario);
+    }
     }
 }
